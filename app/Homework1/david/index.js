@@ -2,7 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Radium from 'radium'
 import color from 'color'
+import _ from 'lodash'
+
 import postData from './postData.js'
+import PostBlock from './postBlock.js'
 
 /*
    Homework 1: Rendering Data
@@ -17,16 +20,19 @@ import postData from './postData.js'
      iii. Add a header above the posts with a creative title (style it nicely)
 */
 
-
 const Homework1 = () => {
   return (
     <div>
+      {
+        _(postData).sortBy(e => e.title).map((post, key) => 
+          <PostBlock title={post.title} body={post.body} user={post.userId} key={key} />
+        ).value()
+      }
     </div>
   )
 }
 
 Homework1.propTypes = {
 }
-
 
 export default Radium(Homework1)

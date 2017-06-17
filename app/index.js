@@ -8,8 +8,8 @@ import Example4 from './Example4'
 import Example5 from './Example5'
 import Example6 from './Example6'
 
-import Homework1 from './Homework1'
+import David from './Homework1/david'
 
 document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(<Example1 />, document.getElementById('root'))
+  ReactDOM.render(<David />, document.getElementById('root'))
 })
