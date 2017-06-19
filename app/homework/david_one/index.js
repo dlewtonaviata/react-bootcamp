@@ -20,7 +20,7 @@ import PostBlock from './postBlock.js'
      iii. Add a header above the posts with a creative title (style it nicely)
 */
 
-const Homework1 = () => {
+const Blog = () => {
   return (
     <div>
       {
@@ -32,7 +32,4 @@ const Homework1 = () => {
   )
 }
 
-Homework1.propTypes = {
-}
-
-export default Radium(Homework1)
+export default Radium(Blog)
