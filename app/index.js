@@ -8,7 +8,7 @@ import Example4 from './Example4'
 import Example5 from './Example5'
 import Example6 from './Example6'
 
-import Blog from './homework/david_two'
+import Blog from './homework/Part3'
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(<Blog />, document.getElementById('root'))
