@@ -7,12 +7,16 @@
   "repository": "",
   "scripts": {
     "start": "brunch watch --server",
-    "build": "brunch build --production"
+    "build": "brunch build --production",
+    "test": "mocha"
   },
   "dependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "chai": "^4.0.2",
     "color": "^1.0.3",
     "lodash": "^4.17.4",
     "lorem-ipsum": "^1.0.4",
+    "mocha": "^3.4.2",
     "prop-types": "^15.5.10",
     "radium": "^0.19.1",
     "react": "^15.5.4",
