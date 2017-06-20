@@ -11,7 +11,6 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    init: () => dispatch(fetchPostListAsyncAction()),
     delete: (postId) => dispatch(createDeleteAction(postId)),
   };
 }
