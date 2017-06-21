@@ -8,7 +8,7 @@
   "scripts": {
     "start": "brunch watch --server",
     "build": "brunch build --production",
-    "test": "mocha"
+    "test": "mocha --require mocha-babel"
   },
   "dependencies": {
     "axios": "^0.16.2",
